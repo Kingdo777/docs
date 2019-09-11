@@ -23,7 +23,7 @@ spec:
       containers:
       - # This is the Go import path for the binary to containerize
         # and substitute here.
-        image: github.com/knative/docs/docs/serving/samples/knative-routing-go
+        image: kingdo/knative-routing-go
         env:
           - name: SERVICE_NAME
             value: Search Service
@@ -44,7 +44,7 @@ spec:
       containers:
       - # This is the Go import path for the binary to containerize
         # and substitute here.
-        image: github.com/knative/docs/docs/serving/samples/knative-routing-go
+        image: kingdo/knative-routing-go
         env:
           - name: SERVICE_NAME
             value: Login Service
