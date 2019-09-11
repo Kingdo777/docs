@@ -32,6 +32,8 @@ spec:
             path: /
           initialDelaySeconds: 3
           periodSeconds: 3
+          timeoutSeconds: 3
+          failureThreshold: 3
 ---
 apiVersion: serving.knative.dev/v1alpha1
 kind: Service
@@ -53,3 +55,5 @@ spec:
             path: /
           initialDelaySeconds: 3
           periodSeconds: 3
+          timeoutSeconds: 3
+          failureThreshold: 3
