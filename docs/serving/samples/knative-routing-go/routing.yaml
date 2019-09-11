@@ -23,7 +23,7 @@ spec:
   - knative-ingress-gateway.knative-serving.svc.cluster.local
   # Set host to the domain name that you own.
   hosts:
-  - kingdo.xyz
+  - kingdo.club
   http:
   - match:
     - uri:
@@ -31,7 +31,7 @@ spec:
     rewrite:
       # Rewrite the original host header to the host header of Search service
       # in order to redirect requests to Search service.
-      authority: search-service.default.kingdo.xyz
+      authority: search-service.default.kingdo.club
     route:
       # knative-ingressgateway is the k8s service created by Knative as the
       # shared gateway of all traffic incoming to the cluster.
@@ -49,7 +49,7 @@ spec:
     rewrite:
       # Rewrite the original host header to the host header of Search service
       # in order to redirect requests to Search service.
-      authority: login-service.default.kingdo.xyz
+      authority: login-service.default.kingdo.club
     route:
       # Basically here we redirect the request to the cluster entry again with
       # updated header "login-service.default.kingdo.xyz" so the request will
